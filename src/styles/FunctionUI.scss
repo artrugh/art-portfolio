@@ -1,0 +1,49 @@
+.function-container {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 80px;
+    font-size: 2em;
+
+    @media (max-width: 600px) {
+        margin: 70px 30px;
+        font-size: 1.3em;
+    }
+
+    .func-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+        text-align-last: center;
+        line-height: 50px;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .function {
+        margin: 60px 0 40px 0;
+        font-size: 1em;
+        font-family: 'HelveticaNeue-Ultralight';
+        text-align: justify;
+        text-align-last: center;
+    }
+
+    #cross {
+        margin-top: 20px;
+        width: 50px;
+        pointer-events: all;
+
+        .st0 {
+            fill: none;
+            stroke: #000000;
+            stroke-width: 1.2237;
+            stroke-miterlimit: 10;
+        }
+    }
+}

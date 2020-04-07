@@ -1,0 +1,48 @@
+.list-container {
+    margin: 30px;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+
+    @media (max-width: 500px) {
+        margin-top: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.7em;
+    }
+
+    .item {
+        line-height: 50px;
+        display: block;
+
+        &:hover {
+            font-size: 1.9em;
+        }
+    }
+
+    .leng-list {
+        margin-top: 30px;
+        // color: rgb(133, 4, 4);
+        @media (min-width: 400px) {
+            display: none;
+        }
+    }
+
+    .social-nets {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            padding: 40px 20px;
+
+            i {
+                font-size: 1.5em;
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+@import './fonts.scss';
+
+//components
+@import './Welcome.scss';
+@import './FunctionUI.scss';
+@import './MenuIcon.scss';
+@import './Nav.scss';
+@import './About.scss';
+@import './List.scss';
+@import './ImgDisplayer.scss';
+
+
+// variables
+$backgroundcolor: #f4f4f4;
+
+body {
+    background-color: $backgroundcolor;
+    // font-family: 'HelveticaNeue-Thin';
+    // font-family: 'HelveticaNeue';
+    // font-family: 'HelveticaNeue-Light';
+    font-family: 'HelveticaNeue-UltraLight';
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+#root {
+    width: 100%;
+    max-width: 1100px;
+}
+
+// hide the scrollbar
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#function-icon {
+    margin: 20px;
+    height: 55px;
+    width: 53px;
+
+    #icon {
+        .st0 {
+            fill: none;
+            stroke: #000000;
+            stroke-width: 1.4177;
+            stroke-miterlimit: 10;
+        }
+
+        .st1 {
+            font-family: 'HelveticaNeue-UltraLight';
+        }
+
+        .st2 {
+            font-size: 32.8534px;
+        }
+    }
+}
+
+// footer
+.name {
+    float: right;
+    margin-bottom: 1em;
+}
