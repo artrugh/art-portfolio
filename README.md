@@ -1,1 +1,1 @@
-https://www.publicalbum.org/blog/embedding-google-photos-albums
+Arturo Rugh artistic portfolio
