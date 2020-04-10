@@ -71,8 +71,9 @@ export const projects = [
                 espanol: [`'Banca' es un proyecto artístico digital concevido en 2016 durante la residencia artísica Lucerito-Madrid. 'Banca' propone un comentario irónico frente a la crisis económica española.`]
             },
             images: [
-                { img: ['sualsur0'] },
-                { img: ['sualsur3'] }
+                { img: ['banca0'] },
+                { img: ['banca1'] },
+                { img: ['banca2'] }
             ]
         }
     }, {
