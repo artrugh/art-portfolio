@@ -6,7 +6,8 @@
     justify-content: center;
 
     margin: 80px;
-    font-size: 2em;
+    font-size: 1.5em;
+
 
     @media (max-width: 600px) {
         margin: 70px 30px;
@@ -20,6 +21,13 @@
         text-align: justify;
         text-align-last: center;
         line-height: 50px;
+        font-weight: 100;
+
+        #function-icon {
+            height: 55px;
+            width: 50px;
+            padding: 20px 0;
+        }
 
         p {
             margin: 0;
@@ -39,11 +47,18 @@
         width: 50px;
         pointer-events: all;
 
+        &:hover {
+            .st0 {
+                stroke: $red;
+            }
+        }
+
         .st0 {
             fill: none;
-            stroke: #000000;
+            stroke: whitesmoke;
             stroke-width: 1.2237;
             stroke-miterlimit: 10;
+
         }
     }
 }

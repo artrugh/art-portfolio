@@ -1,5 +1,19 @@
 @import './fonts.scss';
 
+// variables
+$backgroundcolor: #f4f4f4;
+$black-ground: #131313;
+$grey-icon: #333333;
+$grey-menu: #252526;
+$grey-list: #2d2d2d;
+$grey-cards: #181818;
+$grey-form: #3c3c3c;
+$grey-lateral: #575757;
+$grey-fonts: #969696;
+$dark-white:#d4d4d4;
+// $red: #721e25;
+$red: #ae0005;
+
 //components
 @import './Welcome.scss';
 @import './FunctionUI.scss';
@@ -9,17 +23,15 @@
 @import './List.scss';
 @import './ImgDisplayer.scss';
 
-
-// variables
-$backgroundcolor: #f4f4f4;
-
 body {
-    background-color: $backgroundcolor;
-    // font-family: 'HelveticaNeue-Thin';
+    background-color: $black-ground;
+    color: $dark-white;
     // font-family: 'HelveticaNeue';
     // font-family: 'HelveticaNeue-Light';
+    font-family: 'HelveticaNeue-Thin';
     font-family: 'HelveticaNeue-UltraLight';
-    margin: 0 20px;
+    font-weight: 100;
+    margin: 0;
     display: flex;
     justify-content: center;
     overflow-x: hidden;
@@ -27,7 +39,7 @@ body {
 
 #root {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1500px;
 }
 
 // hide the scrollbar
@@ -35,25 +47,43 @@ body {
     width: 0;
 }
 
+
+
 #function-icon {
-    margin: 20px;
-    height: 55px;
-    width: 53px;
+    padding: 0 20px;
 
     #icon {
+
+        &:hover {
+
+            .st0,
+            .st1,
+            .st2,
+            #XMLID_63_ {
+                stroke: $red;
+            }
+        }
+
+
+        #XMLID_63_ {
+            stroke: $dark-white;
+        }
+
         .st0 {
             fill: none;
-            stroke: #000000;
+            stroke: $dark-white;
             stroke-width: 1.4177;
             stroke-miterlimit: 10;
         }
 
         .st1 {
             font-family: 'HelveticaNeue-UltraLight';
+            color: $dark-white;
         }
 
         .st2 {
             font-size: 32.8534px;
+            color: $dark-white;
         }
     }
 }
@@ -61,5 +91,10 @@ body {
 // footer
 .name {
     float: right;
-    margin-bottom: 1em;
+    color: $red;
+
+    margin: 2em 40px;
+    @media (max-width: 450px) {
+        margin: 1em 15px;
+    }
 }

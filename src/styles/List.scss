@@ -11,7 +11,7 @@
 
     a {
         text-decoration: none;
-        color: black;
+        color: $dark-white;
         font-size: 1.7em;
     }
 
@@ -21,11 +21,13 @@
 
         &:hover {
             font-size: 1.9em;
+            color: $red;
         }
     }
 
     .leng-list {
         margin-top: 30px;
+
         // color: rgb(133, 4, 4);
         @media (min-width: 400px) {
             display: none;
@@ -36,12 +38,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        color: black;
 
         a {
             padding: 40px 20px;
 
+            &:hover {
+                i {
+                    color: $red;
+                }
+            }
             i {
                 font-size: 1.5em;
+                color: $grey-lateral;
+
             }
         }
     }

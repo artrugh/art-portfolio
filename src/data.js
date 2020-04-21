@@ -51,7 +51,7 @@ export const projects = [
                 espanol: "pequeño relato documental de una familia de los Andes",
             },
             date: "2019",
-            video: "https://player.vimeo.com/video/221150896"
+            video: ["https://player.vimeo.com/video/221150896"]
         }
     },
     {
@@ -71,9 +71,9 @@ export const projects = [
                 espanol: [`'Banca' es un proyecto artístico digital concevido en 2016 durante la residencia artísica Lucerito-Madrid. 'Banca' propone un comentario irónico frente a la crisis económica española.`]
             },
             images: [
-                { img: ['banca0'] },
-                { img: ['banca1'] },
-                { img: ['banca2'] }
+                { img: 'banca0' },
+                { img: 'banca1' },
+                { img: 'banca2' }
             ]
         }
     }, {
@@ -95,13 +95,14 @@ export const projects = [
                     El programa está dirigido a jóvenes de diversos países y disciplinas quienes durante las 'Travesías' inteactúan con las comunidades visitadas a través de distintas actividades previamente propuestas no solo por los viajeros sino también por los anfitriones.`]
             },
             images: [
-                { img: ['sualsur0'] },
-                { img: ['sualsur1'] },
-                { img: ['sualsur2'] },
-                { img: ['sualsur3'] },
-                { img: ['sualsur4'] }
+                { img: 'sualsur0' },
+                { img: 'sualsur1' },
+                { img: 'sualsur2' },
+                { img: 'sualsur3' },
+                { img: 'sualsur4' },
+                { img: 'sualsur5' }
             ],
-            video: "https://www.youtube.com/embed/7AF7MkNJRT0?rel=0&modestbranding=1&autohide=1&showinfo=0"
+            video: ["https://www.youtube.com/embed/7AF7MkNJRT0?rel=0&modestbranding=1&autohide=1&showinfo=0"]
         }
     }, {
         edumaye: {
@@ -120,12 +121,12 @@ export const projects = [
                 espanol: [`EduMAyE trabaja en la complementación y en el fortalecimiento de la educación formal en materia de conservación del medio ambiente y el uso sustentable de los recursos energéticos. Mediante la organización de talleres se busca que los participantes sean capaces tanto de adquirir como de transferir conocimiento acerca de temáticas medioambientales. Territorio, naturaleza, energía, sustentabilidad, cambio climático y medioambiente, son conceptos globales, abordados desde la realidad local de cada comunidad a través de herramientas audiovisuales, escénicas, artísticas, lúdicas y constructivas.`]
             },
             images: [
-                { img: ['edumaye0'] },
-                { img: ['edumaye1'] },
-                { img: ['edumaye2'] },
-                { img: ['edumaye3'] },
-                { img: ['edumaye4'] },
-                { img: ['edumaye5'] }
+                { img: 'edumaye0' },
+                { img: 'edumaye1' },
+                { img: 'edumaye2' },
+                { img: 'edumaye3' },
+                { img: 'edumaye4' },
+                { img: 'edumaye5' }
             ]
         }
     }, {
@@ -144,10 +145,14 @@ export const projects = [
                 espanol: [`En la conjunción del cuerpo, la escultura y la acción nació 'Monumentos': un conjunto de acciones que tienen su origen en espacios públicos específicos de Buenos Aires y Madrid. Las mismas no duran más de una hora y consisten en prender insistentemente una vela de parafina blanca en cuyos lados se encuentra tallada la palabra «democracia». “Monumentos” intenta confrontar la monumentalidad del espacio público proponiendo un monumento que más que un sólido es un vacío monumental al cual poder llenar de significado. Se trata de un interrogante material-inmaterial o también de un 'artefacto semiótico' lanzado al territorio. Un interrogante que convoca al espectador y que busca en su propia contingencia, provocar un vínculo con su contexto.`]
             },
             images: [
-                { img: ['monumentos0', 'monumentos1'] },
-                { img: ['monumentos2', 'monumentos3'] }
+                { img: 'monu0' },
+                { img: 'monu1' },
+                { img: 'monu2' },
+                { img: 'monu3' },
+                { img: 'monu4' }
             ],
-            video: "https://www.youtube.com/embed/qYUEHJhv_P4?rel=0&modestbranding=1&autohide=1&showinfo=0"
+            video: ["https://www.youtube.com/embed/qYUEHJhv_P4?rel=0&modestbranding=1&autohide=1&showinfo=0",
+                "https://player.vimeo.com/video/159522472"]
         }
     }, {
         mapas: {
@@ -167,10 +172,11 @@ export const projects = [
                     Pero también son una representación bidimensional del espacio. Vale decir, son una aproximación gráfica a las cualidades topográficas y urbanísticas de un espacio. Son códigos, con sus títulos, escalas, leyendas, coordenadas, etc. Los mapas intentan codificar no solo los espacios, sino también los recorridos, los desplazamientos espaciales, generando una experiencia perceptual finita dentro de la infinitud de los recorridos reales.`]
             },
             images: [
-                { img: ['mapas0'] },
-                { img: ['mapas1'] },
-                { img: ['mapas2'] },
-                { img: ['mapas3'] }
+                { img: 'mapas0' },
+                { img: 'mapas1' },
+                { img: 'mapas2' },
+                { img: 'mapas3' },
+                { img: 'mapas4' }
             ]
         }
     }, {
@@ -190,9 +196,10 @@ export const projects = [
                 espanol: [`'Paz y administración' es un prototipo de dispensador de fármacos, en el que convergen la propaganda de Estado y el mundo farmacológico. El dispensador es una herramienta fundamental en el paquete de medidas de planificación social propuestas por el Ministerio de Salud de la Nación Argentina frente al Bicentenario de la Independencia. Los dispensadores fueron localizados entonces en distintos puntos estratégicos de la ciudad de Buenos Aires. Su función fue la de ofrecer y administrar paz a los ciudadanos durante las semanas que duraron los festejos del Bicentenario.`]
             },
             images: [
-                { img: ['paz2'] },
-                { img: ['paz0', 'paz1'] },
-                { img: ['paz3'] }
+                { img: 'paz0' },
+                { img: 'paz1' },
+                { img: 'paz2' },
+                { img: 'paz3' }
             ]
         }
     }, {
@@ -215,10 +222,10 @@ export const projects = [
                     Quien no se resista a las míticas hamburguesas, encontrará en Happy Meal un exquisito menú, digno de ser el protagonista de cualquier encuentro entre familiares o amigos.`]
             },
             images: [
-                { img: ['mac0'] },
-                { img: ['mac1'] },
-                { img: ['mac2'] },
-                { img: ['mac3'] }
+                { img: 'mac0' },
+                { img: 'mac1' },
+                { img: 'mac2' },
+                { img: 'mac3' }
             ]
         }
     }, {
@@ -240,8 +247,10 @@ export const projects = [
                     El movimiento se multiplica en las sombras proyectadas, dibujando cambiantes formas amorfas que cobran una inquietante vida.`]
             },
             images: [
-                { img: ['movil0'] },
-                { img: ['movil1'] }
+                { img: 'movil0' },
+                { img: 'movil1' },
+                { img: 'movil2' },
+                { img: 'movil3' }
             ]
         }
     }, {
@@ -262,10 +271,12 @@ export const projects = [
                     A medio camino entre el libro tradicional y las pantallas de las computadoras, “Libro de luz” está conformado por una decenas de hojas caladas que filtran la luz y dibujan formas geométricas.`]
             },
             images: [
-                { img: ['libro0'] },
-                { img: ['libro1'] },
-                { img: ['libro2'] },
-                { img: ['libro3'] }
+                { img: 'libro0' },
+                { img: 'libro1' },
+                { img: 'libro2' },
+                { img: 'libro3' },
+                { img: 'libro4' },
+                { img: 'libro5' }
             ]
         }
     }, {
@@ -296,17 +307,19 @@ export const projects = [
                 ]
             },
             images: [
-                { img: ['dibujos0'] },
-                { img: ['dibujos1'] },
-                { img: ['dibujos2'] },
-                { img: ['dibujos3'] }
+                { img: 'dibujos0' },
+                { img: 'dibujos1' },
+                { img: 'dibujos2' },
+                { img: 'dibujos3' },
+                { img: 'dibujos4' },
+                { img: 'dibujos5' }
             ]
         }
     }, {
         árbol: {
             title: {
                 english: "Tree",
-                espanol: "Árbol",
+                espanol: "De-construcción",
             },
             type: {
                 english: "wood, hinges",
@@ -315,11 +328,14 @@ export const projects = [
             date: "2010",
             description: {
                 english: [`'Tree' invites us to retrace our steps, to discover the folds of a tree’s life. It is a game where the body of the tree intercepts the human body. The tree talks and we listen with our hands.`],
-                espanol: [`'Árbol' es una invitación a desandar el camino, a descubrir los pliegues de la vida arbórea. Se trata de un juego donde el cuerpo del árbol intercepta el cuerpo humano. El árbol nos habla y nosotros escuchamos con las manos.`]
+                espanol: [
+                    `'De-construcción' es un juego compuesto por módulos de madera articulados.
+                Basta sentarse en el piso, tal como lo hacen los niños, para descubrir las infinitas posibilidades que propone la estructura horizontal, inspirada por la obra de Carl André. Sus pliegues, alterados por el espectador, diluyen su forma originalmente monocromática y secuencial.`]
             },
             images: [
-                { img: ['arbol0'] },
-                { img: ['arbol1'] }
+                { img: 'arbol0' },
+                { img: 'arbol1' },
+                { img: 'arbol2' }
             ]
         }
     }

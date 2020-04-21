@@ -14,8 +14,12 @@ export default function FunctionIcon({ displayNav }) {
 
     return (
         <svg id="function-icon"
+            x="0px"
+            y="0px"
+            viewBox="0 0 55 55"
             style={{
-                height: displayFunc() ? "55px" : 0,
+                height: displayFunc() ? null : 0,
+                width: displayFunc() ? null : 0,
                 opacity: displayFunc() ? 1 : 0
             }}>
             <g id="icon">

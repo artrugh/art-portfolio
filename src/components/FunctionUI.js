@@ -9,30 +9,31 @@ import { data } from './../data'
 import FunctionIcon from './FunctionIcon';
 import Cross from './Cross'
 
-const FunctionUI = ({ leng, setDisplay, display }) => {
+const FunctionUI = ({ leng, setPortfolio }) => {
 
     // after 7 seconds hide the functionUI
     useEffect(() => {
         setTimeout(() => {
-            setDisplay(false)
+            setPortfolio("gallery")
         }, 20000)
-    }, [setDisplay])
+    }, [setPortfolio])
 
-    return ( 
+    return (
         <div
             className="function-container"
-            onClick={() => setDisplay(false)}
-            style={{
-                display: !display && "none"
-            }} >
+            onClick={() => setPortfolio("gallery")}
+            // style={{
+            //     display: !display && "none"
+            // }}
+             >
             <div className="func-description">
                 {data[leng].function.description.map(item =>
-                // when there is an icon diplays icon, otherwise, p
+                    // when there is an icon diplays icon, otherwise, p
                     item !== "icon" ? <p key={uuidv4()} >{item}</p> :
                         <FunctionIcon key={uuidv4()} />)}
             </div>
             <div className="function">{data[leng].function.function}</div>
-                <Cross />
+            <Cross />
         </div>
     )
 }

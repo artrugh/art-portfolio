@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { v4 as uuidv4 } from 'uuid';
 import { data, projects } from './../data';
 
-const List = ({ setActive, leng, setLeng }) =>
-    <ul className="list-container">
+const List = ({ setPortfolio, leng, setLeng, setList }) => {
+
+    useEffect(() => {
+        setList(true)
+    }, [])
+    return <ul className="list-container">
         {projects.map(item =>
             <a
                 className="item"
                 href={`#${Object.keys(item)}`}
-                onClick={() => setActive(false)}
+                onClick={() => setPortfolio("gallery")}
                 key={uuidv4()}
             >{Object.values(item)[0].title[leng]}</a>)}
 
@@ -34,5 +38,6 @@ const List = ({ setActive, leng, setLeng }) =>
             )}
         </div>
     </ul>
+}
 
 export default List;

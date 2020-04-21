@@ -1,12 +1,15 @@
 import React from 'react'
 
-const MenuIcon = ({ setActive, active, displayNav }) => {
+const MenuIcon = ({ setPortfolio, portfolioController, displayNav }) => {
+
+    const active = portfolioController === "list" ? true : false;
+    
     return (
         <div className="menu-icon"
             style={{
                 height: displayNav ? "auto" : 0,
             }}
-            onClick={() => setActive(!active)}
+            onClick={() => setPortfolio(portfolioController === "list" ? "gallery" : "list")}
         >
             <svg
                 id="icon-menu"

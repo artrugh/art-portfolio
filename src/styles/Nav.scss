@@ -1,24 +1,27 @@
 .nav-container {
-    max-width: 1100px; 
+    max-width: 1500px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: solid 1px black;
+    border-bottom: solid 2px $grey-icon;
     position: sticky;
     top: 0;
-    background-color: #f4f4f4;
+    background-color: $grey-menu;
     transition: opacity 0.7s ease-out;
+    padding: 0 40px;
 
-    @media (max-width: 500px) {
-        padding: 10px 0;
-        
+    @media (max-width: 450px) {
+        padding: 0px 15px;
     }
 
-    h1 {
-        font-size: 2.3em;
+     #logo {
+        font-size: 2em;
+        font-family: 'HelveticaNeue-UltraLight';
         letter-spacing: 0.2em;
         padding-right: 20px;
         margin: 15px 0;
+        color: $red;
+        cursor: pointer;
 
         @media (max-width: 500px) {
             margin: 0;
@@ -26,7 +29,7 @@
         }
 
         @media (max-width: 400px) {
-            font-size: 1.5em;
+            font-size: 1em;
         }
     }
 
@@ -38,12 +41,19 @@
 
         #function-icon {
             margin: 0;
+            height: 45px;
+            width: 40px;
         }
 
-        .leng{
+        .leng {
             margin-right: 20px;
+
             @media (max-width: 400px) {
                 display: none;
+            }
+
+            &:hover {
+                color: $red;
             }
         }
     }
@@ -55,4 +65,29 @@ footer {
     margin-bottom: 1em;
     font-family: 'HelveticaNeue-Thin';
     cursor: pointer;
+}
+
+.arrow {
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 3;
+    padding: 30px;
+    transform: rotate(270deg);
+
+    @media (max-width: 500px) {
+        width: 25px;
+        height: 25px;
+    }
+
+    .arrow-scroll {
+        opacity: 0.9;
+        fill: none;
+        stroke: $red;
+        stroke-width: 5;
+        stroke-miterlimit: 10
+    }
 }

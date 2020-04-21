@@ -14,8 +14,9 @@ const Welcome = props => {
 
     return (leng === null) ?
         <div className="welcome-container">
-            <h1> Welcome!</h1>
-            <h2>select the lenguage</h2>
+            <h1> Arturo Rugh</h1>
+            <h2>-  welcome -</h2>
+            <h2>select the language</h2>
             <div className="leng-bottons">
                 <button
                     onClick={() => {
