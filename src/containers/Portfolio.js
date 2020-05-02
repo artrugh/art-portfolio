@@ -10,9 +10,10 @@ import Image from './../components/Image';
 
 
 const Portfolio = ({ data }) => {
+    console.log(data.projects);
 
     // set the lenguage from the props
-    const [leng, setLeng] = useState(data);
+    const [leng, setLeng] = useState(data.leng);
     // change the menu icon
     const [portfolioController, setPortfolio] = useState("gallery");
     // set the image
@@ -24,7 +25,7 @@ const Portfolio = ({ data }) => {
     const [list, setList] = useState(false);
 
     useEffect(function check() {
-        // if the was displayed set it off otherwise chech if it rendering the gallery
+        // if the list was displayed set it off otherwise chech if it rendering the gallery
         list ? setList(false) : (portfolioController !== "gallery") ?
             // if the gallery is not been rendering // scroll to top
             window.scrollTo({ top: 0, behavior: 'auto' }) :
@@ -67,7 +68,7 @@ const Portfolio = ({ data }) => {
         </>}
         {portfolioController === "img" &&
             <Image
-            leng={leng}
+                leng={leng}
                 scrollPosition={scrollPosition}
                 img={img}
                 setPortfolio={setPortfolio}

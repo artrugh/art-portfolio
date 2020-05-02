@@ -7,7 +7,7 @@ const List = ({ setPortfolio, leng, setLeng, setList }) => {
 
     useEffect(() => {
         setList(true)
-    }, [])
+    }, [setList])
     return <ul className="list-container">
         {projects.map(item =>
             <a

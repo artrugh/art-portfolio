@@ -32,9 +32,10 @@ export const data = {
         ]
 
     }, social_nets: [
+        { soundcloud: ["fab fa-soundcloud", "https://soundcloud.com/arturorugh"] },
         { instagram: ["fab fa-instagram", "https://www.instagram.com/arturorugh/"] },
         { vimeo: ["fab fa-vimeo", "https://vimeo.com/arturorugh"] },
-        { youtube: ["fab fa-youtube", "https://www.youtube.com/channel/UCZXanI-JKsslropcdWz479A?view_as=subscriber"] },
+        { youtube: ["fab fa-youtube", "https://www.youtube.com/channel/UCZXanI-JKsslropcdWz479A?view_as=subscriber"] }
     ]
 }
 
@@ -52,6 +53,7 @@ export const projects = [
             },
             date: "2019",
             video: ["https://player.vimeo.com/video/221150896"]
+            // "http://localhost:4000/video/bcf0cf573622fd4a81f91a955453fb33.mp4"
         }
     },
     {

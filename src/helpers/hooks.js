@@ -1,4 +1,5 @@
 import { useEffect, useState, useLayoutEffect, useRef } from "react";
+import axios, { get } from 'axios';
 
 // hook to add mousemove event
 // documentation
@@ -210,4 +211,41 @@ export const useHandleCursor = (projects, leng, img, setPortfolio, scrollPositio
 
   return [index, images, handelCursor]
 
+}
+
+export const useFetchData = url => {
+
+  // hook where the projects and error are stored
+  const [projects, setProjects] = useState();
+  const [isError, setisError] = useState();
+
+  const fetchData = async () => {
+
+    try {
+      const res = await get(url);
+      // unsucced fetch
+      if (!res) {
+        // catch errors and display UI
+        setisError(true)
+
+      } else if (res.status === 200) {
+        // store the data in the hook
+        setProjects(res.data);
+        console.log("projects stored");
+      }
+
+    } catch (err) {
+      console.log(err);
+      setisError(true)
+    }
+
+  }
+
+  useEffect(function () {
+    if (!projects) {
+      fetchData()
+    }
+  }, [projects])
+
+  return [isError, projects]
 }
